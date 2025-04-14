@@ -25,7 +25,7 @@ This repository contains a collection of projects and exercises focused on Linux
 
 To build and run these programs, you need:
 
-- A Linux-based system (e.g., Ubuntu, CentOS, Fedora)
+- A Linux-based system.
 - A C compiler (e.g., GCC)
 - Basic knowledge of Linux system programming
 
