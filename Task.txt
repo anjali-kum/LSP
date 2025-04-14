@@ -1,0 +1,11 @@
+Use program file13.c to complete task from Day 14
+- complie and run file13.c
+- open the "text file" of the file descriptor seperately in text editor. 
+- append data to the text file from text editor and save.
+- the file data will be read by the file13.c program
+
+
+Task for Day 15:
+- Open a file in read only mode.
+- Modify the file descriptor to have write access.
+- Write data to the file. 

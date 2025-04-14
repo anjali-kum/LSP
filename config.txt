@@ -1,0 +1,2 @@
+Decimal : yes
+Floating point : no

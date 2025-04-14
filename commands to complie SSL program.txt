@@ -1,0 +1,25 @@
+// update the system
+sudo apt-get update
+
+// install open ssl in ubuntu
+sudo apt-get install openssl
+
+
+
+
+// create private key for server with "RSA" encryption algoritham
+openssl genpkey -algorithm RSA -out server1.key
+
+//Create server certificate file with the private key
+openssl req -new -key server1.key -out server1.csr
+
+//add the valitity period for the certificate
+openssl x509 -req -days 365 -in server1.csr -signkey server1.key -out server1.crt
+
+
+
+//complile client with file name "ssl_sock_client1.c"
+gcc ssl_sock_client1.c -o ssl_sock_client1 -L/usr/lib -lssl -lcrypto
+
+//complile server with file name "ssl_sock_serv1.c"
+gcc ssl_sock_serv1.c -o ssl_sock_serv1 -L/usr/lib -lssl -lcrypto

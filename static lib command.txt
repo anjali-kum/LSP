@@ -1,0 +1,7 @@
+ar rcs libmylib2.a mylib2.o
+
+gcc test1.c -o test1 -L. libmylib2.a 
+
+gcc test1.c -o test1 -L./stat_dir libmylib2.a 
+
+
